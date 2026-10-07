@@ -1,0 +1,14 @@
+body {
+    background-color: #dbf7f7;
+    font-family: Arial, sans-serif;
+}
+
+.todo {
+    color: #50504e;
+    background-color: #a5e0d6;
+    width: 30%;
+    border: 1px solid #a29999;
+    box-shadow: 0px 0px 10px #a29999;
+    margin: 10px auto;
+    padding: 10px;
+}
