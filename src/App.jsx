@@ -11,10 +11,23 @@ function App() {
       <Tittle text="Welcome to SvnEmp React" />
       <Tittle text="My Todo List" />
 
-      <Todo />
-      <Todo />
-      <Todo />
-      <Modal />
+      <Todo
+        text="complete task 1"
+        info="more info about task 1"
+      />
+      <Todo
+        text="complete task 2"
+        info="more info about task 2"
+      />
+      <Todo
+        text="complete task 3"
+        info="more info about task 3"
+      />
+      <Modal
+        qry="Are you sure?"
+        nullact="Cancel"
+        yesact="Confirm"
+      />
     </div>
   );
 }
