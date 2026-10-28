@@ -11,23 +11,25 @@ function App() {
       <Tittle text="Welcome to SvnEmp React" />
       <Tittle text="My Todo List" />
 
+      <div className="todo_input">
+        <input type="text" placeholder="add/Enter a new task/todo" />
+        <button>Add Task/todo </button>
+      </div>
+
       <Todo
         text="complete task 1"
-        info="more info about task 1"
       />
       <Todo
         text="complete task 2"
-        info="more info about task 2"
       />
       <Todo
         text="complete task 3"
-        info="more info about task 3"
       />
-      <Modal
+      {/* <Modal
         qry="Are you sure?"
         nullact="Cancel"
         yesact="Confirm"
-      />
+      /> */}
     </div>
   );
 }
