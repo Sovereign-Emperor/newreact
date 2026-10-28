@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 
 function App() {
 
-  const [showModal] = useState(false);
+  const [showModal, setshowModal] = useState(false);
 
   return (
     <div className="App">
@@ -20,7 +20,7 @@ function App() {
         <input type="text" placeholder="add/Enter a new task/todo" onChange={(event) => {
           console.log(event.target.value);
         }} />
-        <button>Add Task/todo </button>
+        <button onClick={() => {setshowModal(true)}}>Add Task/todo </button>
       </div>
 
       <Todo
@@ -32,7 +32,7 @@ function App() {
       <Todo
         text="complete task 3"
       />
-      {false &&
+      {showModal &&
         <Modal
           qry="Confirm delete"
           nullact="Cancel"
