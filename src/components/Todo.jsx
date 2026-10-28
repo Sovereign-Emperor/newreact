@@ -11,7 +11,7 @@ function Todo({text}) {
 
         <div className="todo">
             <h3>{text}</h3>
-            <button onClick={deleteTodo}>Delete</button>
+            <button className='delBtn' onClick={deleteTodo}>Delete</button>
         </div>
     );
 }

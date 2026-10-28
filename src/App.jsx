@@ -4,6 +4,7 @@ import Todo from './components/Todo.jsx';
 import Tittle from './components/Tittle.jsx';
 import Modal from './components/Modal.jsx';
 import React, { useState } from 'react';
+import Counter from './components/counter.jsx';
 
 
 function App() {
@@ -20,9 +21,9 @@ function App() {
         <input type="text" placeholder="add/Enter a new task/todo" onChange={(event) => {
           console.log(event.target.value);
         }} />
-        <button onClick={() => {setshowModal(true)}}>Add Task/todo </button>
+        <button className='btn' onClick={() => {setshowModal(false)}}>Add Task/todo </button>
       </div>
-
+      <Counter />
       <Todo
         text="complete task 1"
       />

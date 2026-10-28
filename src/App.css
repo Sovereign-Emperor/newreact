@@ -1,6 +1,23 @@
+input {
+    color: #50504e;
+    background-color: #cfefe9;
+    width: 30%;
+    border: 1px solid #a29999;
+    box-shadow: 0px 0px 10px #a29999;
+    margin: 10px;
+    padding: 10px;
 
+}
 
-
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #4a7770;
+    color: white;
+}
 
 /* the below css is the pre built styles by create-react-app */
 .App {
