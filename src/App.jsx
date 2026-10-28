@@ -3,9 +3,12 @@ import './App.css';
 import Todo from './components/Todo.jsx';
 import Tittle from './components/Tittle.jsx';
 import Modal from './components/Modal.jsx';
+import React, { useState } from 'react';
+
 
 function App() {
-  let isModalOpen = false;
+
+  const [showModal] = useState(false);
 
   return (
     <div className="App">
@@ -29,13 +32,13 @@ function App() {
       <Todo
         text="complete task 3"
       />
-      {isModalOpen ?
+      {false &&
         <Modal
           qry="Confirm delete"
           nullact="Cancel"
           yesact="Confirm"
         />
-        : null}
+        }
     </div>
   );
 }
