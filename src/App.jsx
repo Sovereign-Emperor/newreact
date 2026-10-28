@@ -5,6 +5,7 @@ import Tittle from './components/Tittle.jsx';
 import Modal from './components/Modal.jsx';
 
 function App() {
+  let isModalOpen = false;
   return (
     <div className="App">
       <img src={logo} className="App-logo" alt="logo" />
@@ -12,7 +13,9 @@ function App() {
       <Tittle text="My Todo List" />
 
       <div className="todo_input">
-        <input type="text" placeholder="add/Enter a new task/todo" />
+        <input type="text" placeholder="add/Enter a new task/todo" onChange={(event) => {
+          console.log(event.target.value);
+        }} />
         <button>Add Task/todo </button>
       </div>
 
@@ -25,11 +28,11 @@ function App() {
       <Todo
         text="complete task 3"
       />
-      {/* <Modal
+      <Modal
         qry="Are you sure?"
         nullact="Cancel"
         yesact="Confirm"
-      /> */}
+      />
     </div>
   );
 }
