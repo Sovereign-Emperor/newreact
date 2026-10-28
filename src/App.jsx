@@ -21,7 +21,7 @@ function App() {
         <input type="text" placeholder="add/Enter a new task/todo" onChange={(event) => {
           console.log(event.target.value);
         }} />
-        <button className='btn' onClick={() => {setshowModal(false)}}>Add Task/todo </button>
+        <button className='btn' onClick={() => {setshowModal(true)}}>Add Task/todo </button>
       </div>
       <Counter />
       <Todo

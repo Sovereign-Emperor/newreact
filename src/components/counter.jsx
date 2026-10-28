@@ -6,11 +6,11 @@ function Counter() {
 
     return (
         <div className="counterDiv">
-            <button className='btn' onClick={() => setCount(count - 1)}>
+            <button className='counterBtn' onClick={() => setCount(count - 1)}>
                 -
             </button>
             <p> {count}</p>
-            <button className='btn' onClick={() => setCount(count + 1)}>
+            <button className='counterBtn' onClick={() => setCount(count + 1)}>
                 + 
             </button>
         </div>
