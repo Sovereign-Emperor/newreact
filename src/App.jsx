@@ -6,6 +6,7 @@ import Modal from './components/Modal.jsx';
 
 function App() {
   let isModalOpen = false;
+
   return (
     <div className="App">
       <img src={logo} className="App-logo" alt="logo" />
@@ -28,11 +29,13 @@ function App() {
       <Todo
         text="complete task 3"
       />
-      <Modal
-        qry="Are you sure?"
-        nullact="Cancel"
-        yesact="Confirm"
-      />
+      {isModalOpen ?
+        <Modal
+          qry="Confirm delete"
+          nullact="Cancel"
+          yesact="Confirm"
+        />
+        : null}
     </div>
   );
 }
