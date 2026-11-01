@@ -15,7 +15,14 @@ function App() {
     setshowModal(true);
     console.log('onTodoDelete()');
   }
-
+  function nullaction() {
+    setshowModal(false);
+    console.log('nullaction()');
+  }
+  function yesaction() {
+    setshowModal(false);
+    console.log('yesaction()');
+  }
   return (
     <div className="App">
       <img src={logo} className="App-logo" alt="logo" />
@@ -45,7 +52,10 @@ function App() {
         <Modal
           qry="Confirm delete"
           nullact="Cancel"
+          nullaction={nullaction}
+          
           yesact="Confirm"
+          yesaction={yesaction}
         />
         }
     </div>
