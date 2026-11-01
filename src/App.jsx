@@ -12,6 +12,7 @@ function App() {
   const [showModal, setshowModal] = useState(false);
 
   function onTodoDelete() {
+    setshowModal(true);
     console.log('onTodoDelete()');
   }
 
