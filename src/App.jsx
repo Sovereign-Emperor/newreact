@@ -11,6 +11,10 @@ function App() {
 
   const [showModal, setshowModal] = useState(false);
 
+  function onTodoDelete() {
+    console.log('onTodoDelete()');
+  }
+
   return (
     <div className="App">
       <img src={logo} className="App-logo" alt="logo" />
@@ -25,12 +29,15 @@ function App() {
       </div>
       <Counter />
       <Todo
+        onTodoDelete={onTodoDelete}
         text="complete task 1"
       />
       <Todo
+        onTodoDelete={onTodoDelete}
         text="complete task 2"
       />
       <Todo
+        onTodoDelete={onTodoDelete}
         text="complete task 3"
       />
       {showModal &&
