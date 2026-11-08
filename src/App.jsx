@@ -3,7 +3,7 @@ import './App.css';
 import Todo from './components/Todo.jsx';
 import Tittle from './components/Tittle.jsx';
 import Modal from './components/Modal.jsx';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Counter from './components/counter.jsx';
 
 
@@ -23,6 +23,10 @@ function App() {
     setshowModal(false);
     console.log('yesaction()');
   }
+
+  useEffect(() => {
+    console.log('useEffect()');
+  }, []);
   return (
     <div className="App">
       <img src={logo} className="App-logo" alt="logo" />
